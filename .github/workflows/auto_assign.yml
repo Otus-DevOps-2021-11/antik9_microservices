@@ -1,0 +1,10 @@
+# Set to true to add assignees to pull requests
+name: 'Auto Assign'
+on: pull_request
+
+# A list of reviewers to be added to pull requests (GitHub user name)
+jobs:
+  add-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.1.2
